@@ -1,7 +1,9 @@
 {
     "require": {
         "PHP": "^7.1",
-        "keboola/php-component": "^4.1"
+        "keboola/php-component": "^4.1",
+        "symfony/finder": "^4.0",
+        "symfony/filesystem": "^4.0"
     },
     "require-dev": {
         "jakub-onderka/php-parallel-lint": "^1.0",
@@ -14,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MyComponent\\": "src/"
+            "Keboola\\StampFilenamesProcessor\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MyComponent\\Tests\\": "tests/phpunit/"
+            "Keboola\\StampFilenamesProcessor\\Tests\\": "tests/phpunit/"
         }
     },
     "scripts": {
